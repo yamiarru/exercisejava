@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Javascript 2 - arru yamila</title>
+    <style>
+        h1,h2,h3,h5{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Actividad Javascript 2 - ARRU</h1>
+        <h2>Bucles Anidados</h2>
+
+        <div class="tabla11">
+            <h3>La Tabla del 11</h3>
+        </div>
+        <div class="tabla10">
+            <h3>La Tabla del 10</h3>
+        </div>
+            
+        <div class="tabla9">
+            <h3>La Tabla del 9</h3>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script>
+            const d = document;
+
+            // Tabla del 11
+            const $tabla11 = d.querySelector('.tabla11'),
+                $fragment11= d.createDocumentFragment();
+
+                for(let i = 1; i < 10; i++){
+                    let $hijo = d.createElement('h5');
+                    $hijo.textContent = `11 x ${i} = ${11*i} `;
+                    $fragment11.appendChild($hijo);
+                }
+                
+                $tabla11.appendChild($fragment11);
+
+            // Tabla del 10
+            const $tabla10 = d.querySelector('.tabla10'),
+                $fragment10= d.createDocumentFragment();
+
+                for(let i = 1; i < 10; i++){
+                    let $hijo = d.createElement('h5');
+                    $hijo.textContent = `10 x ${i} = ${10*i} `;
+                    $fragment10.appendChild($hijo);
+                }
+                
+                $tabla10.appendChild($fragment10);
+            
+            // Tabla del 9
+            const $tabla9 = d.querySelector('.tabla9'),
+                $fragment9= d.createDocumentFragment();
+
+                for(let i = 1; i < 10; i++){
+                    let $hijo = d.createElement('h5');
+                    $hijo.textContent = `9 x ${i} = ${9*i} `;
+                    $fragment9.appendChild($hijo);
+                }
+                
+                $tabla9.appendChild($fragment9);
+        </script>
+    
+</body>
+</html>
